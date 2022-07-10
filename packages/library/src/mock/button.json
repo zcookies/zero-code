@@ -1,0 +1,17 @@
+{
+  "type": "comp",
+  "name": "zo-button",
+  "id": "myBtn",
+  "props": {
+    "text": "文本",
+    "type": "primary"
+  },
+  "css": ".van-button$sp { background:red;}",
+  "events": {
+    "onClick": {
+      "funcString": "function(){console.log(this);this.props.text = '123'}"
+    }
+  },
+  "data": {},
+  "childrens": []
+}
