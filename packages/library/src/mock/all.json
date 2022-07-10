@@ -1,0 +1,61 @@
+{
+  "type": "div",
+  "childrens": [
+    {
+      "type": "comp",
+      "name": "zo-cell-group",
+      "props": {
+        "title": "分组标题2",
+        "inset": true,
+        "border": true
+      },
+      "childrens": [
+        {
+          "type": "comp",
+          "name": "zo-cell",
+          "props": {
+            "title": "左侧标题",
+            "value": "右侧内容",
+            "label": "标题下方描述信息"
+          },
+          "events": {
+            "onClick": {
+              "funcString": "function(e){this.props.value = Math.random();this.container.myBtn.data.visible = !this.container.myBtn.data.visible}"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "div",
+      "childrens": [
+        {
+          "type": "comp",
+          "name": "zo-button",
+          "id": "myBtn",
+          "props": {
+            "text": "文本",
+            "type": "primary"
+          },
+          "css": ".van-button$sp { }",
+          "events": {
+            "onClick": {
+              "funcString": "function(){console.log(this);this.props.text = '123'}"
+            }
+          },
+          "data": {
+            "visible": true
+          }
+        },
+        {
+          "type": "comp",
+          "name": "zo-icon",
+          "props": {
+            "name": "chat-o",
+            "badge": "99+"
+          }
+        }
+      ]
+    }
+  ]
+}
